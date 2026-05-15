@@ -10,13 +10,13 @@ EXTERNAL = os.path.join(BASE_DIR, "data", "external")
 def load_all_data():
     """Charge tous les fichiers CSV du projet en un dictionnaire de DataFrames."""
     files = {
-        "inactive":    "Data_africa_education_inactive.csv",
-        "student":     "Data_africa_education_student.csv",
-        "unemployed":  "Data_africa_education_unemployed.csv",
-        "formality":   "Data_africa_formality_sectors.csv",
-        "sector":      "Data_africa_sector_employed.csv",
-        "sector_ur":   "Data_africa_sectors_urban_rural.csv",
-        "employed_ur": "Data_employed_rural_urban.csv",
+        "inactive":    "inactive.csv",
+        "student":     "student.csv",
+        "unemployed":  "unemployed.csv",
+        "formality":   "formality.csv",
+        "sector":      "sector.csv",
+        "sector_ur":   "sector_ur.csv",
+        "employed_ur": "employed_ur.csv",
     }
     return {
         k: pd.read_csv(
